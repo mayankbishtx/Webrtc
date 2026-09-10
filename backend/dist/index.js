@@ -38,5 +38,4 @@ wss.on("connection", function connection(ws) {
         }
         console.log(message);
     });
-    ws.send(JSON.stringify({ type: "Welcome" }));
 });

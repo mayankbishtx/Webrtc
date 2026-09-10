@@ -45,8 +45,8 @@ export const Sender = () => {
             }
         } 
 
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
-        // const stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: false });
+        // const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+        const stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: false });J
         pc.addTrack(stream.getVideoTracks()[0], stream);
 
     }
